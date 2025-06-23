@@ -26,6 +26,8 @@ python -m birdstrikes.explore Public.xlsx
 
 and then navigate to the mentioned host, which should be `http://127.0.0.1:8050/`
 
+Note that using the full dataset will take 3-5 minutes to load, but there shouldn't be a noticeable latency once loaded. 
+
 ## App Features
 
 The dash app is meant to provide a frontend visualization to the FAA dataset downloaded at https://wildlife.faa.gov/search. All visualizations are cross-linked to an extent. For example, selecting points on the map will update the data used in plots. Likewise, applying a time or aircraft filter will update plots. The interactivity and cross linking is meant to accelerate exploration.  
