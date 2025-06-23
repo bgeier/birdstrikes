@@ -1,0 +1,6 @@
+env/*
+*csv
+*xlsx
+*pdf
+
+birdstrikes/__pycache__/
