@@ -17,7 +17,7 @@ Python 3.11 was used in testing but should work starting at 3.10.
 
 ## setup
 
-The dashboard is a Flask app implemented with dash and plotly. To use the app, a command line interface, you need to run the script from the terminal with an excel/csv file. 
+The dashboard is a Flask app implemented with dash and plotly. The app interface is implemented as a Typer app. To start the app a user executes at the command line with an FAA data file. Either the full excel/CSV, file or a subsample is fine.  
 
 ```bash
 source env/bin/activate # if not already activated
