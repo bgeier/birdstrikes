@@ -10,7 +10,7 @@ For a Mac/Linux, this may look like
 ```bash
 python3.11 -m venv env
 source env/bin/activate
-pip install requirements.txt
+pip install -r requirements.txt
 ```
 
 Python 3.11 was used in testing but should work starting at 3.10. 
