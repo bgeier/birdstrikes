@@ -92,13 +92,13 @@ def bird_df(birds: list[Bird]) -> pd.DataFrame:
         if bird.species not in species_id_to_label:
             species_id_to_label[bird.species] = bird.species_name
 
-    bird_df = pd.DataFrame.from_dict(data=species_count, orient="index")
-    bird_df.columns = ["cnt"]
-    bird_df["species"] = bird_df.index
-    bird_df["species_label"] = [
-        species_id_to_label[species_id] for species_id in bird_df["species"]
+    _bird_df = pd.DataFrame.from_dict(data=species_count, orient="index")
+    _bird_df.columns = ["cnt"]
+    _bird_df["species"] = _bird_df.index
+    _bird_df["species_label"] = [
+        species_id_to_label[species_id] for species_id in _bird_df["species"]
     ]
-    return bird_df
+    return _bird_df
 
 
 def airport_df(airports: list[Airport]) -> pd.DataFrame:
