@@ -34,7 +34,6 @@ The dash app is meant to provide a frontend visualization to the FAA dataset dow
 
 A user can select a date range to explore and or an aircraft to display. By default, date range is the earliest and latest time point, and selected aircraft is all. 
 
-![alt text](image.png)
 
 ### Geographic Effects
 
