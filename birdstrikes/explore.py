@@ -246,9 +246,10 @@ def stringify_coords(lat: float, long: float) -> str:
 def main(file: Path):
     print("reading data")
     if file.suffix == ".csv":
-        df = pd.read_csv(file)
+        df = pd.read_csv(file, low_memory=False)
     else:
         df = pd.read_excel(file, sheet_name="Sheet1")
+        df.to_csv(f'{file.stem}.csv',index=False)
 
     strikes = parse_birdstrikes(df)
 
